@@ -27,39 +27,44 @@
         }
     </style>
 </head>
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuidado de Mascotas</title>
+   <style>
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        background-color: #333;
+        margin: 0;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
 
-    <style>
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 15px;
+        display: block;
+    }
+
+    nav ul li a:hover {
+        background-color: #4CAF50;
+        border-radius: 5px;
+    }
+
+    /* Para pantallas pequeñas (móviles) */
+    @media (max-width: 600px) {
         nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            background-color: #333;
-            margin: 0;
-            padding: 10px;
+            flex-direction: column;
         }
-
         nav ul li {
-            margin: 0 10px;
+            margin: 5px 0;
         }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 10px 15px;
-            display: block;
-        }
-
-        nav ul li a:hover {
-            background-color: #4CAF50;
-            border-radius: 5px;
-        }
-    </style>
-</head>
+    }
+</style>
 <body>
     <header>
         <h1>Cuidado de Mascotas</h1>
